@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MRJCardShare_Example' do
+  pod 'MRJCardShare', :path => '../'
+
+  target 'MRJCardShare_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

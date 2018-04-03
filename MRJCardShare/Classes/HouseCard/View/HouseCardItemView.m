@@ -8,6 +8,7 @@
 
 #import "HouseCardItemView.h"
 #import "HouseCardItem.h"
+#import "UIView+MRJFrame.h"
 
 @interface HouseCardItemView()
 

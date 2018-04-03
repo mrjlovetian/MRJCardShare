@@ -42,7 +42,7 @@
     self.buildPriceLab.textAlignment = NSTextAlignmentCenter;
     self.buildPriceLab.font = font(25*self.sizeScale);
     
-    if (!MF_isStringNull(self.shareContentLab.text)) {
+    if (!Is_StringNull(self.shareContentLab.text)) {
         NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
         style.maximumLineHeight = 24*self.sizeScale;
         style.minimumLineHeight = 24*self.sizeScale;

@@ -102,10 +102,26 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/DWTagList/DWTagList.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MRJAttributedMarkup/MRJAttributedMarkup.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MRJCardShare/MRJCardShare.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MRJInputView/MRJInputView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MRJRemarkTextView/MRJRemarkTextView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MRJUIColorAdditions/MRJUIColorAdditions.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MRJ_QRCode/MRJ_QRCode.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/UIViewMRJFrame/UIViewMRJFrame.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/DWTagList/DWTagList.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MRJAttributedMarkup/MRJAttributedMarkup.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MRJCardShare/MRJCardShare.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MRJInputView/MRJInputView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MRJRemarkTextView/MRJRemarkTextView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MRJUIColorAdditions/MRJUIColorAdditions.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MRJ_QRCode/MRJ_QRCode.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/UIViewMRJFrame/UIViewMRJFrame.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

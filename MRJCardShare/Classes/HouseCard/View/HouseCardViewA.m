@@ -59,7 +59,7 @@
     CGRect brokerRect = [self.brokerLab.text boundingRectWithSize:CGSizeMake(0, 22*self.sizeScale) options:(NSStringDrawingUsesLineFragmentOrigin) attributes:@{NSFontAttributeName:self.brokerLab.font} context:nil];
     self.brokerLab.frame = CGRectMake(self.width - 36*self.sizeScale - brokerRect.size.width, self.buildTypeLab.bottom + 54*self.sizeScale, brokerRect.size.width, 22*self.sizeScale);
     
-    if (!MF_isStringNull(self.shareContentLab.text)) {
+    if (!Is_StringNull(self.shareContentLab.text)) {
         NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
         style.maximumLineHeight = 24*self.sizeScale;
         style.minimumLineHeight = 24*self.sizeScale;

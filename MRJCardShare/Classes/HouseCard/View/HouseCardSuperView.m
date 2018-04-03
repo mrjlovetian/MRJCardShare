@@ -7,8 +7,9 @@
 //
 
 #import "HouseCardSuperView.h"
-#import "UIImageView+YYWebImage.h"
-#import <TopsTechQRCode/TopsQRCodeTool.h>
+#import "UIImageView+WebCache.h"
+#import "MRJ_QRCode.h"
+
 
 @implementation CoreImageView
 
@@ -162,12 +163,12 @@
     self.brokerLab.text = dataSource[@"broker"];
     self.shareTitleLab.text = dataSource[@"shareTitle"];
     self.shareContentLab.text = dataSource[@"shareContent"];
-    [self.buildImageView yy_setImageWithURL:[NSURL URLWithString:dataSource[@"buildImage"]] options:(YYWebImageOptionProgressiveBlur)];
+    [self.buildImageView sd_setImageWithURL:[NSURL URLWithString:dataSource[@"buildImage"]]];
     [self refreshUI];
     
-    self.coreImageView.coreImageView.image = [TopsQRCodeTool TopsgenerateWithDefaultQRCodeData:@{@"name":@"yhj"} imageViewWidth:self.coreImageView.width encryptType:(EncryptTypeNone) errorHandle:^(NSString *err) {
-        
-    }];
+//    self.coreImageView.coreImageView.image = [TopsQRCodeTool TopsgenerateWithDefaultQRCodeData:@{@"name":@"yhj"} imageViewWidth:self.coreImageView.width encryptType:(EncryptTypeNone) errorHandle:^(NSString *err) {
+//
+//    }];
 }
 
 #pragma mark Get

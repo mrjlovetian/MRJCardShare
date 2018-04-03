@@ -10,9 +10,12 @@
 #import "HouseCardManager.h"
 #import "HouseCardItemView.h"
 #import "EditHouseShareViewController.h"
-#import "UIButton+Block.h"
-#import "UIView+ZXQuartz.h"
-#import "ShareSDKMethod.h"
+#import "UIButton+MRJBlock.h"
+#import "Macro.h"
+#import "UIView+MRJFrame.h"
+#import "UIColor+MRJAdditions.h"
+//#import "UIView+ZXQuartz.h"
+//#import "ShareSDKMethod.h"
 
 @interface HouseCardViewController (){
     NSMutableDictionary *_dataSource;
@@ -41,9 +44,9 @@
 }
 
 - (void)initUI {
-    self.headerTitle = @"选择模板";
-    [self setDoActionTintTitle:@"编辑" highlightTitle:@"编辑"];
-    self.view.backgroundColor = [UIColor KK_BackgroundColor];
+    self.title = @"选择模板";
+//    [self setDoActionTintTitle:@"编辑" highlightTitle:@"编辑"];
+    self.view.backgroundColor = [UIColor colorWithHexString:@"efeff4"];
     
     CGFloat height = SCREEN_HEIGHT - NavBAR_HEIGHT - 23*2*V_ScaleRate_New_W - SCREEN_Bottom_height - 45 - 10 - 20 - 80*V_ScaleRate_New_W;
     CGFloat width = 226.0 * height / 402.0;
@@ -56,7 +59,7 @@
     [self.view addSubview:self.houseCardItemView];
     [self.view addSubview:self.shareBtn];
     
-    MJWeakSelf
+    __weak typeof(self) weakSelf = self;
     self.houseCardItemView.selectBlock = ^(NSInteger index) {
         [houseResultView removeFromSuperview];
         houseResultView = [weakSelf.houseCardManager getViewWithSourceType:index size:size dataSource:_dataSource];
@@ -65,25 +68,25 @@
         [weakSelf.view addSubview:houseResultView];
     };
     
-    [self.shareBtn addActionHandler:^(NSInteger tag) {
-        UIImage *image = [houseResultView makeImageWithView:houseResultView withSize:houseResultView.size];
-        NSData *data = nil;
-        if (iPhone5||iPhone4) {
-            data = UIImageJPEGRepresentation(image, 1.0);
-        } else {
-            data =UIImageJPEGRepresentation(image, 0.8);
-        }
-        UIImage *newImage = [UIImage imageWithData:data];
-        
-        [ShareSDKMethod shareActionHouseInView:weakSelf.view title:@"楼盘分享" content:@"" houseInfo:nil image:newImage imageUrl:@"" deepUrl:@"" showClub:YES showKber:YES showBroker:YES shareScoureType:ShareScoureType_web success:nil fail:nil];
-    }];
+//    [self.shareBtn addActionHandler:^(NSInteger tag) {
+//        UIImage *image = [houseResultView makeImageWithView:houseResultView withSize:houseResultView.size];
+//        NSData *data = nil;
+//        if (iPhone5||iPhone4) {
+//            data = UIImageJPEGRepresentation(image, 1.0);
+//        } else {
+//            data =UIImageJPEGRepresentation(image, 0.8);
+//        }
+//        UIImage *newImage = [UIImage imageWithData:data];
+//
+//        [ShareSDKMethod shareActionHouseInView:weakSelf.view title:@"楼盘分享" content:@"" houseInfo:nil image:newImage imageUrl:@"" deepUrl:@"" showClub:YES showKber:YES showBroker:YES shareScoureType:ShareScoureType_web success:nil fail:nil];
+//    }];
 }
 
 - (void)doAction {
     EditHouseShareViewController *vc = [EditHouseShareViewController new];
     [self.navigationController pushViewController:vc animated:YES];
     
-    MJWeakSelf;
+    __weak typeof(self) weakSelf = self;
     vc.editBlock = ^(NSString *sharTitle, NSString *shareContent) {
         [_dataSource setObject:sharTitle forKey:@"shareTitle"];
         [_dataSource setObject:shareContent forKey:@"shareContent"];
@@ -112,12 +115,11 @@
     if (!_shareBtn) {
         _shareBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         _shareBtn.frame = CGRectMake(Edge, SCREEN_HEIGHT - 55 - SCREEN_Bottom_height, SCREEN_WIDTH - 2*Edge, 45);
-        _shareBtn.titleLabel.font = KKShare.font15;
         [_shareBtn setTitle:@"去分享" forState:UIControlStateNormal];
-        _shareBtn.titleLabel.font = KKShare.font15;
+        _shareBtn.titleLabel.font = [UIFont systemFontOfSize:15];
         _shareBtn.layer.cornerRadius = 3.0;
         _shareBtn.clipsToBounds = YES;
-        _shareBtn.backgroundColor = [UIColor KK_MainColor];
+        _shareBtn.backgroundColor = [UIColor colorWithHexString:@"0091e8"];
         [_shareBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     }
     return _shareBtn;

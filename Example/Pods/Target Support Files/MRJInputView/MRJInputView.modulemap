@@ -1,0 +1,6 @@
+framework module MRJInputView {
+  umbrella header "MRJInputView-umbrella.h"
+
+  export *
+  module * { export * }
+}

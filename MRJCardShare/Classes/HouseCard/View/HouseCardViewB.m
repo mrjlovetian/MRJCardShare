@@ -42,7 +42,7 @@
     self.shareTitleLab.font = font(24*self.sizeScale);
     self.shareTitleLab.textColor = [UIColor colorWithRed:235.0f/255.0f green:204.0f/255.0f blue:136.0f/255.0f alpha:1.0f];
     
-    if (!MF_isStringNull(self.shareContentLab.text)) {
+    if (!Is_StringNull(self.shareContentLab.text)) {
         NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
         style.maximumLineHeight = 24*self.sizeScale;
         style.minimumLineHeight = 24*self.sizeScale;

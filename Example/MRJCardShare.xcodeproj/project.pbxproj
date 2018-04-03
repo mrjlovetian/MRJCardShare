@@ -304,11 +304,27 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MRJCardShare_Example/Pods-MRJCardShare_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DWTagList/DWTagList.framework",
+				"${BUILT_PRODUCTS_DIR}/MRJAttributedMarkup/MRJAttributedMarkup.framework",
 				"${BUILT_PRODUCTS_DIR}/MRJCardShare/MRJCardShare.framework",
+				"${BUILT_PRODUCTS_DIR}/MRJInputView/MRJInputView.framework",
+				"${BUILT_PRODUCTS_DIR}/MRJRemarkTextView/MRJRemarkTextView.framework",
+				"${BUILT_PRODUCTS_DIR}/MRJUIColorAdditions/MRJUIColorAdditions.framework",
+				"${BUILT_PRODUCTS_DIR}/MRJ_QRCode/MRJ_QRCode.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/UIViewMRJFrame/UIViewMRJFrame.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DWTagList.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MRJAttributedMarkup.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MRJCardShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MRJInputView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MRJRemarkTextView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MRJUIColorAdditions.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MRJ_QRCode.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIViewMRJFrame.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

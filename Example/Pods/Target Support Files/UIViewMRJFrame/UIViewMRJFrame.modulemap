@@ -1,0 +1,6 @@
+framework module UIViewMRJFrame {
+  umbrella header "UIViewMRJFrame-umbrella.h"
+
+  export *
+  module * { export * }
+}

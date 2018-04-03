@@ -1,9 +1,9 @@
 {
   "name": "MRJCardShare",
   "version": "0.1.0",
-  "summary": "A short description of MRJCardShare.",
+  "summary": "策略模式开发组件,结合组件化开发",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/mrjlovetian@gmail.com/MRJCardShare",
+  "homepage": "https://github.com/mrjlovetian/MRJCardShare",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,25 @@
     "mrjlovetian@gmail.com": "mrjlovetian@gmail.com"
   },
   "source": {
-    "git": "https://github.com/mrjlovetian@gmail.com/MRJCardShare.git",
+    "git": "https://github.com/mrjlovetian/MRJCardShare.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "MRJCardShare/Classes/**/*"
+  "source_files": "MRJCardShare/Classes/**/*",
+  "dependencies": {
+    "MRJRemarkTextView": [
+
+    ],
+    "MRJInputView": [
+
+    ],
+    "SDWebImage": [
+
+    ],
+    "MRJ_QRCode": [
+
+    ]
+  }
 }

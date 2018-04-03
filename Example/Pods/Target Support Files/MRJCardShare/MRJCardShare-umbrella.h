@@ -10,6 +10,17 @@
 #endif
 #endif
 
+#import "EditHouseShareViewController.h"
+#import "HouseCardViewController.h"
+#import "HouseCardManager.h"
+#import "UIButton+MRJBlock.h"
+#import "HouseCardItem.h"
+#import "HouseCardItemView.h"
+#import "HouseCardSuperView.h"
+#import "HouseCardViewA.h"
+#import "HouseCardViewB.h"
+#import "HouseCardViewC.h"
+#import "HouseCardViewD.h"
 
 FOUNDATION_EXPORT double MRJCardShareVersionNumber;
 FOUNDATION_EXPORT const unsigned char MRJCardShareVersionString[];

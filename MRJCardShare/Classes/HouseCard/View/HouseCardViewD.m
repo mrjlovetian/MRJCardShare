@@ -47,7 +47,7 @@
     self.buildTypeLab.clipsToBounds = YES;
     self.buildTypeLab.backgroundColor = [UIColor colorWithRed:245.0f/255.0f green:165.0f/255.0f blue:35.0f/255.0f alpha:1.0f];
 
-    if (!MF_isStringNull(self.shareContentLab.text)) {
+    if (!Is_StringNull(self.shareContentLab.text)) {
         NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
         style.maximumLineHeight = 24*self.sizeScale;
         style.minimumLineHeight = 24*self.sizeScale;
@@ -62,6 +62,5 @@
     
     self.brokerLab.frame = CGRectMake(30*self.sizeScale, self.height - 62*self.sizeScale, self.width - 60*self.sizeScale, 22*self.sizeScale);
 }
-
 
 @end

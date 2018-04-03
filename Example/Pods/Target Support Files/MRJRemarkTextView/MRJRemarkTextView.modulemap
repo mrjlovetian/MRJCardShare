@@ -1,0 +1,6 @@
+framework module MRJRemarkTextView {
+  umbrella header "MRJRemarkTextView-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,6 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIView+MRJFrame.h"
+
+#define font(f)  [UIFont systemFontOfSize:f]
+#define fontB(f) [UIFont fontWithName:@"Helvetica-Bold" size:f]
+#define fontI(f) [UIFont fontWithName:@"Helvetica-Light" size:f]
+#define Is_StringNull(string) ((string == nil || string.length == 0 || [string isEqualToString:@"(null)"]) ? YES : NO)
 
 @interface CoreImageView: UIView
 

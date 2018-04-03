@@ -1,0 +1,6 @@
+framework module MRJCardShare {
+  umbrella header "MRJCardShare-umbrella.h"
+
+  export *
+  module * { export * }
+}

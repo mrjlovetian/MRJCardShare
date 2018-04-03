@@ -1,0 +1,812 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E14372AA98C31D9FC5D40D31E13284E /* Pods-MRJCardShare_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE321DA00673A5B20719061EDD8CA470 /* Pods-MRJCardShare_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EB577ECE0D15741939904DAE28243A0 /* Pods-MRJCardShare_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D430CF6E7D29F8F3E86C04F11EEA0AF2 /* Pods-MRJCardShare_Tests-dummy.m */; };
+		603B7AA2F5446FC0684A85A9175731BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		71C05E951461ABDC03670856EE1CE1FC /* MRJCardShare-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB1F70EBE9FDC11ADD155056C2BAB91 /* MRJCardShare-dummy.m */; };
+		99CF4230974B8DDFDCF5B7D804121D2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A507DADCFDEEE11EC5538C7F966E3484 /* Pods-MRJCardShare_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E376BF1246B8929F4FD9514E41FE35 /* Pods-MRJCardShare_Example-dummy.m */; };
+		A74D1CA1A1A8A6D5379F8C1D13B1AE95 /* MRJCardShare-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D71BDA2578C42526EA7E5D6CD5D6AD3A /* MRJCardShare-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7E1BB7E20724C9F00ADB2F2 /* HouseCardViewB.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E1BB6820724C9F00ADB2F2 /* HouseCardViewB.h */; };
+		E7E1BB7F20724C9F00ADB2F2 /* HouseCardSuperView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E1BB6920724C9F00ADB2F2 /* HouseCardSuperView.m */; };
+		E7E1BB8020724C9F00ADB2F2 /* HouseCardViewD.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E1BB6A20724C9F00ADB2F2 /* HouseCardViewD.m */; };
+		E7E1BB8120724C9F00ADB2F2 /* HouseCardViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E1BB6B20724C9F00ADB2F2 /* HouseCardViewC.m */; };
+		E7E1BB8220724C9F00ADB2F2 /* HouseCardItem.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E1BB6C20724C9F00ADB2F2 /* HouseCardItem.h */; };
+		E7E1BB8320724C9F00ADB2F2 /* HouseCardItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E1BB6D20724C9F00ADB2F2 /* HouseCardItemView.m */; };
+		E7E1BB8420724C9F00ADB2F2 /* HouseCardViewA.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E1BB6E20724C9F00ADB2F2 /* HouseCardViewA.h */; };
+		E7E1BB8520724C9F00ADB2F2 /* HouseCardViewD.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E1BB6F20724C9F00ADB2F2 /* HouseCardViewD.h */; };
+		E7E1BB8620724C9F00ADB2F2 /* HouseCardSuperView.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E1BB7020724C9F00ADB2F2 /* HouseCardSuperView.h */; };
+		E7E1BB8720724C9F00ADB2F2 /* HouseCardViewB.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E1BB7120724C9F00ADB2F2 /* HouseCardViewB.m */; };
+		E7E1BB8820724C9F00ADB2F2 /* HouseCardViewA.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E1BB7220724C9F00ADB2F2 /* HouseCardViewA.m */; };
+		E7E1BB8920724C9F00ADB2F2 /* HouseCardItemView.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E1BB7320724C9F00ADB2F2 /* HouseCardItemView.h */; };
+		E7E1BB8A20724C9F00ADB2F2 /* HouseCardItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E1BB7420724C9F00ADB2F2 /* HouseCardItem.m */; };
+		E7E1BB8B20724C9F00ADB2F2 /* HouseCardViewC.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E1BB7520724C9F00ADB2F2 /* HouseCardViewC.h */; };
+		E7E1BB8C20724C9F00ADB2F2 /* HouseCardViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E1BB7720724C9F00ADB2F2 /* HouseCardViewController.h */; };
+		E7E1BB8D20724C9F00ADB2F2 /* EditHouseShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E1BB7820724C9F00ADB2F2 /* EditHouseShareViewController.m */; };
+		E7E1BB8E20724C9F00ADB2F2 /* HouseCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E1BB7920724C9F00ADB2F2 /* HouseCardViewController.m */; };
+		E7E1BB8F20724C9F00ADB2F2 /* EditHouseShareViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E1BB7A20724C9F00ADB2F2 /* EditHouseShareViewController.h */; };
+		E7E1BB9020724C9F00ADB2F2 /* HouseCardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E1BB7C20724C9F00ADB2F2 /* HouseCardManager.h */; };
+		E7E1BB9120724C9F00ADB2F2 /* HouseCardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E1BB7D20724C9F00ADB2F2 /* HouseCardManager.m */; };
+		F0BBDA91EE8F4EE0EB4AFDACA3EA766A /* Pods-MRJCardShare_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 27A2A5A58315EB7641ECD26A4AB6B825 /* Pods-MRJCardShare_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F20FE56F0C21214DF22C188E9C74255B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9A5F018FEB8AA91E0A03DDF414906B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDDB10F86CC1984217456F2DD85FDA3E;
+			remoteInfo = MRJCardShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08D6B4DDAAE98B975E593A0ED13DAB73 /* Pods-MRJCardShare_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MRJCardShare_Tests.modulemap"; sourceTree = "<group>"; };
+		18C8A560B01DC0E0278E480B257DE928 /* MRJCardShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MRJCardShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27A2A5A58315EB7641ECD26A4AB6B825 /* Pods-MRJCardShare_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MRJCardShare_Tests-umbrella.h"; sourceTree = "<group>"; };
+		3B932E7CDB3E6564FA988E3E5E30EBA8 /* MRJCardShare.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MRJCardShare.modulemap; sourceTree = "<group>"; };
+		40D189BB68118BC46A902846D7978B9F /* Pods-MRJCardShare_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MRJCardShare_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		45EAD6F6F1E28ABC1E14B21C260E7709 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4620E4962C1DB297C9DE619752A66F55 /* MRJCardShare-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MRJCardShare-prefix.pch"; sourceTree = "<group>"; };
+		468C6DCD46975B4A07C58E5AE14B550A /* Pods-MRJCardShare_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MRJCardShare_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		471B6429BDA9D419BB2FA29344613FD4 /* Pods-MRJCardShare_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRJCardShare_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		595B3020AB8D8211C79755AFC974A764 /* Pods-MRJCardShare_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRJCardShare_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5BCA2F155E5EE746B9408F7309793548 /* Pods-MRJCardShare_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MRJCardShare_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6DBA473DA3D418D2556610C9B32B27D7 /* Pods-MRJCardShare_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRJCardShare_Tests-resources.sh"; sourceTree = "<group>"; };
+		7D4F34067A6D8D63DC449E8B7C4CD80B /* Pods_MRJCardShare_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MRJCardShare_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89E376BF1246B8929F4FD9514E41FE35 /* Pods-MRJCardShare_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MRJCardShare_Example-dummy.m"; sourceTree = "<group>"; };
+		8C161AF5128867D6CD3FC1C625860943 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92E2D70AF50481ADF7053037336D8C2C /* Pods-MRJCardShare_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRJCardShare_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F92459C0E0F660AE5F26027AC557531 /* Pods-MRJCardShare_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRJCardShare_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		A21E5176088C5A61CFB626D0299186CD /* Pods-MRJCardShare_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRJCardShare_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B5CF5ECC42CFD146447D6EA1CD53D656 /* Pods-MRJCardShare_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MRJCardShare_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B81F35D82A374828252C82C7BD9A0DEF /* MRJCardShare.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MRJCardShare.xcconfig; sourceTree = "<group>"; };
+		BE321DA00673A5B20719061EDD8CA470 /* Pods-MRJCardShare_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MRJCardShare_Example-umbrella.h"; sourceTree = "<group>"; };
+		D0A6FCC3DFD6473C7BEC582CBC3DC64E /* Pods_MRJCardShare_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MRJCardShare_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D430CF6E7D29F8F3E86C04F11EEA0AF2 /* Pods-MRJCardShare_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MRJCardShare_Tests-dummy.m"; sourceTree = "<group>"; };
+		D71BDA2578C42526EA7E5D6CD5D6AD3A /* MRJCardShare-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MRJCardShare-umbrella.h"; sourceTree = "<group>"; };
+		E18E12FC52705B061B578C428C321708 /* Pods-MRJCardShare_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MRJCardShare_Example.modulemap"; sourceTree = "<group>"; };
+		E1F1F6C521A151A1A3D17A806EDAF52F /* Pods-MRJCardShare_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRJCardShare_Example-resources.sh"; sourceTree = "<group>"; };
+		E7E1BB6820724C9F00ADB2F2 /* HouseCardViewB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseCardViewB.h; sourceTree = "<group>"; };
+		E7E1BB6920724C9F00ADB2F2 /* HouseCardSuperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HouseCardSuperView.m; sourceTree = "<group>"; };
+		E7E1BB6A20724C9F00ADB2F2 /* HouseCardViewD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HouseCardViewD.m; sourceTree = "<group>"; };
+		E7E1BB6B20724C9F00ADB2F2 /* HouseCardViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HouseCardViewC.m; sourceTree = "<group>"; };
+		E7E1BB6C20724C9F00ADB2F2 /* HouseCardItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseCardItem.h; sourceTree = "<group>"; };
+		E7E1BB6D20724C9F00ADB2F2 /* HouseCardItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HouseCardItemView.m; sourceTree = "<group>"; };
+		E7E1BB6E20724C9F00ADB2F2 /* HouseCardViewA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseCardViewA.h; sourceTree = "<group>"; };
+		E7E1BB6F20724C9F00ADB2F2 /* HouseCardViewD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseCardViewD.h; sourceTree = "<group>"; };
+		E7E1BB7020724C9F00ADB2F2 /* HouseCardSuperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseCardSuperView.h; sourceTree = "<group>"; };
+		E7E1BB7120724C9F00ADB2F2 /* HouseCardViewB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HouseCardViewB.m; sourceTree = "<group>"; };
+		E7E1BB7220724C9F00ADB2F2 /* HouseCardViewA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HouseCardViewA.m; sourceTree = "<group>"; };
+		E7E1BB7320724C9F00ADB2F2 /* HouseCardItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseCardItemView.h; sourceTree = "<group>"; };
+		E7E1BB7420724C9F00ADB2F2 /* HouseCardItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HouseCardItem.m; sourceTree = "<group>"; };
+		E7E1BB7520724C9F00ADB2F2 /* HouseCardViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseCardViewC.h; sourceTree = "<group>"; };
+		E7E1BB7720724C9F00ADB2F2 /* HouseCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseCardViewController.h; sourceTree = "<group>"; };
+		E7E1BB7820724C9F00ADB2F2 /* EditHouseShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditHouseShareViewController.m; sourceTree = "<group>"; };
+		E7E1BB7920724C9F00ADB2F2 /* HouseCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HouseCardViewController.m; sourceTree = "<group>"; };
+		E7E1BB7A20724C9F00ADB2F2 /* EditHouseShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditHouseShareViewController.h; sourceTree = "<group>"; };
+		E7E1BB7C20724C9F00ADB2F2 /* HouseCardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseCardManager.h; sourceTree = "<group>"; };
+		E7E1BB7D20724C9F00ADB2F2 /* HouseCardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HouseCardManager.m; sourceTree = "<group>"; };
+		E8CEFCFCA39771D84BBCDFE88C5F96AB /* Pods-MRJCardShare_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRJCardShare_Example-frameworks.sh"; sourceTree = "<group>"; };
+		FCB1F70EBE9FDC11ADD155056C2BAB91 /* MRJCardShare-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MRJCardShare-dummy.m"; sourceTree = "<group>"; };
+		FFC1B57F97EA356273D001BDD4C7A4A0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AC2B822D68A54F9C5FFFF2B9ECD9540 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99CF4230974B8DDFDCF5B7D804121D2C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16ACE69C7DBB8A0B9E4BFEF36654DD78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				603B7AA2F5446FC0684A85A9175731BC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F38031980922D0634F1F2EE240BBFF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F20FE56F0C21214DF22C188E9C74255B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		147CD784CBDC209BD8961082CC26FC89 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E6B9EBE2D52DDB5B54ABF1E223325C4B /* Pods-MRJCardShare_Example */,
+				5A62120CDA64E29F8780B4D72E4D6C3D /* Pods-MRJCardShare_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		466C7AFDDBCA66E3450A22251AFDA6AB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFC1B57F97EA356273D001BDD4C7A4A0 /* Info.plist */,
+				3B932E7CDB3E6564FA988E3E5E30EBA8 /* MRJCardShare.modulemap */,
+				B81F35D82A374828252C82C7BD9A0DEF /* MRJCardShare.xcconfig */,
+				FCB1F70EBE9FDC11ADD155056C2BAB91 /* MRJCardShare-dummy.m */,
+				4620E4962C1DB297C9DE619752A66F55 /* MRJCardShare-prefix.pch */,
+				D71BDA2578C42526EA7E5D6CD5D6AD3A /* MRJCardShare-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MRJCardShare";
+			sourceTree = "<group>";
+		};
+		5A62120CDA64E29F8780B4D72E4D6C3D /* Pods-MRJCardShare_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8C161AF5128867D6CD3FC1C625860943 /* Info.plist */,
+				08D6B4DDAAE98B975E593A0ED13DAB73 /* Pods-MRJCardShare_Tests.modulemap */,
+				40D189BB68118BC46A902846D7978B9F /* Pods-MRJCardShare_Tests-acknowledgements.markdown */,
+				468C6DCD46975B4A07C58E5AE14B550A /* Pods-MRJCardShare_Tests-acknowledgements.plist */,
+				D430CF6E7D29F8F3E86C04F11EEA0AF2 /* Pods-MRJCardShare_Tests-dummy.m */,
+				471B6429BDA9D419BB2FA29344613FD4 /* Pods-MRJCardShare_Tests-frameworks.sh */,
+				6DBA473DA3D418D2556610C9B32B27D7 /* Pods-MRJCardShare_Tests-resources.sh */,
+				27A2A5A58315EB7641ECD26A4AB6B825 /* Pods-MRJCardShare_Tests-umbrella.h */,
+				92E2D70AF50481ADF7053037336D8C2C /* Pods-MRJCardShare_Tests.debug.xcconfig */,
+				9F92459C0E0F660AE5F26027AC557531 /* Pods-MRJCardShare_Tests.release.xcconfig */,
+			);
+			name = "Pods-MRJCardShare_Tests";
+			path = "Target Support Files/Pods-MRJCardShare_Tests";
+			sourceTree = "<group>";
+		};
+		5CAA498064AA21224426DD94711AC6D7 /* MRJCardShare */ = {
+			isa = PBXGroup;
+			children = (
+				E7E1BB6620724C9F00ADB2F2 /* HouseCard */,
+				466C7AFDDBCA66E3450A22251AFDA6AB /* Support Files */,
+			);
+			name = MRJCardShare;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				CB323270284B4A2171A6D86B81AF9D89 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				9458D5026B041403B228C4691C6B10B0 /* Products */,
+				147CD784CBDC209BD8961082CC26FC89 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9458D5026B041403B228C4691C6B10B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18C8A560B01DC0E0278E480B257DE928 /* MRJCardShare.framework */,
+				D0A6FCC3DFD6473C7BEC582CBC3DC64E /* Pods_MRJCardShare_Example.framework */,
+				7D4F34067A6D8D63DC449E8B7C4CD80B /* Pods_MRJCardShare_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB323270284B4A2171A6D86B81AF9D89 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CAA498064AA21224426DD94711AC6D7 /* MRJCardShare */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E6B9EBE2D52DDB5B54ABF1E223325C4B /* Pods-MRJCardShare_Example */ = {
+			isa = PBXGroup;
+			children = (
+				45EAD6F6F1E28ABC1E14B21C260E7709 /* Info.plist */,
+				E18E12FC52705B061B578C428C321708 /* Pods-MRJCardShare_Example.modulemap */,
+				B5CF5ECC42CFD146447D6EA1CD53D656 /* Pods-MRJCardShare_Example-acknowledgements.markdown */,
+				5BCA2F155E5EE746B9408F7309793548 /* Pods-MRJCardShare_Example-acknowledgements.plist */,
+				89E376BF1246B8929F4FD9514E41FE35 /* Pods-MRJCardShare_Example-dummy.m */,
+				E8CEFCFCA39771D84BBCDFE88C5F96AB /* Pods-MRJCardShare_Example-frameworks.sh */,
+				E1F1F6C521A151A1A3D17A806EDAF52F /* Pods-MRJCardShare_Example-resources.sh */,
+				BE321DA00673A5B20719061EDD8CA470 /* Pods-MRJCardShare_Example-umbrella.h */,
+				A21E5176088C5A61CFB626D0299186CD /* Pods-MRJCardShare_Example.debug.xcconfig */,
+				595B3020AB8D8211C79755AFC974A764 /* Pods-MRJCardShare_Example.release.xcconfig */,
+			);
+			name = "Pods-MRJCardShare_Example";
+			path = "Target Support Files/Pods-MRJCardShare_Example";
+			sourceTree = "<group>";
+		};
+		E7E1BB6620724C9F00ADB2F2 /* HouseCard */ = {
+			isa = PBXGroup;
+			children = (
+				E7E1BB6720724C9F00ADB2F2 /* View */,
+				E7E1BB7620724C9F00ADB2F2 /* Controller */,
+				E7E1BB7B20724C9F00ADB2F2 /* Model */,
+			);
+			name = HouseCard;
+			path = MRJCardShare/Classes/HouseCard;
+			sourceTree = "<group>";
+		};
+		E7E1BB6720724C9F00ADB2F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E7E1BB6820724C9F00ADB2F2 /* HouseCardViewB.h */,
+				E7E1BB6920724C9F00ADB2F2 /* HouseCardSuperView.m */,
+				E7E1BB6A20724C9F00ADB2F2 /* HouseCardViewD.m */,
+				E7E1BB6B20724C9F00ADB2F2 /* HouseCardViewC.m */,
+				E7E1BB6C20724C9F00ADB2F2 /* HouseCardItem.h */,
+				E7E1BB6D20724C9F00ADB2F2 /* HouseCardItemView.m */,
+				E7E1BB6E20724C9F00ADB2F2 /* HouseCardViewA.h */,
+				E7E1BB6F20724C9F00ADB2F2 /* HouseCardViewD.h */,
+				E7E1BB7020724C9F00ADB2F2 /* HouseCardSuperView.h */,
+				E7E1BB7120724C9F00ADB2F2 /* HouseCardViewB.m */,
+				E7E1BB7220724C9F00ADB2F2 /* HouseCardViewA.m */,
+				E7E1BB7320724C9F00ADB2F2 /* HouseCardItemView.h */,
+				E7E1BB7420724C9F00ADB2F2 /* HouseCardItem.m */,
+				E7E1BB7520724C9F00ADB2F2 /* HouseCardViewC.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E7E1BB7620724C9F00ADB2F2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E7E1BB7720724C9F00ADB2F2 /* HouseCardViewController.h */,
+				E7E1BB7820724C9F00ADB2F2 /* EditHouseShareViewController.m */,
+				E7E1BB7920724C9F00ADB2F2 /* HouseCardViewController.m */,
+				E7E1BB7A20724C9F00ADB2F2 /* EditHouseShareViewController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E7E1BB7B20724C9F00ADB2F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E7E1BB7C20724C9F00ADB2F2 /* HouseCardManager.h */,
+				E7E1BB7D20724C9F00ADB2F2 /* HouseCardManager.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		618D9BEFE81486312C004CA0CD13A259 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E14372AA98C31D9FC5D40D31E13284E /* Pods-MRJCardShare_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB2E4B04B18B5A840690F93AAA90667D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7E1BB8F20724C9F00ADB2F2 /* EditHouseShareViewController.h in Headers */,
+				E7E1BB8420724C9F00ADB2F2 /* HouseCardViewA.h in Headers */,
+				E7E1BB8220724C9F00ADB2F2 /* HouseCardItem.h in Headers */,
+				E7E1BB8B20724C9F00ADB2F2 /* HouseCardViewC.h in Headers */,
+				E7E1BB8920724C9F00ADB2F2 /* HouseCardItemView.h in Headers */,
+				A74D1CA1A1A8A6D5379F8C1D13B1AE95 /* MRJCardShare-umbrella.h in Headers */,
+				E7E1BB7E20724C9F00ADB2F2 /* HouseCardViewB.h in Headers */,
+				E7E1BB8C20724C9F00ADB2F2 /* HouseCardViewController.h in Headers */,
+				E7E1BB8620724C9F00ADB2F2 /* HouseCardSuperView.h in Headers */,
+				E7E1BB9020724C9F00ADB2F2 /* HouseCardManager.h in Headers */,
+				E7E1BB8520724C9F00ADB2F2 /* HouseCardViewD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED78C45A1DEC7AC38C0442B6E5FE0E01 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0BBDA91EE8F4EE0EB4AFDACA3EA766A /* Pods-MRJCardShare_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9F81128CC9600541292E5AFDEC608A07 /* Pods-MRJCardShare_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AF33831D349B854752DC26CAFFABD82 /* Build configuration list for PBXNativeTarget "Pods-MRJCardShare_Example" */;
+			buildPhases = (
+				0EFA2DFBDA6605566F9469AB627B83AD /* Sources */,
+				16ACE69C7DBB8A0B9E4BFEF36654DD78 /* Frameworks */,
+				618D9BEFE81486312C004CA0CD13A259 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				116CB1820A0034ACB66F8FD59121882D /* PBXTargetDependency */,
+			);
+			name = "Pods-MRJCardShare_Example";
+			productName = "Pods-MRJCardShare_Example";
+			productReference = D0A6FCC3DFD6473C7BEC582CBC3DC64E /* Pods_MRJCardShare_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A24BD2CA97E7B57549E70DB9D68EBED7 /* Pods-MRJCardShare_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04C6656F98352739D2AC823C1BBAF50B /* Build configuration list for PBXNativeTarget "Pods-MRJCardShare_Tests" */;
+			buildPhases = (
+				9CE5AB6EFEFA95160633027BE3B5B683 /* Sources */,
+				5F38031980922D0634F1F2EE240BBFF8 /* Frameworks */,
+				ED78C45A1DEC7AC38C0442B6E5FE0E01 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MRJCardShare_Tests";
+			productName = "Pods-MRJCardShare_Tests";
+			productReference = 7D4F34067A6D8D63DC449E8B7C4CD80B /* Pods_MRJCardShare_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EDDB10F86CC1984217456F2DD85FDA3E /* MRJCardShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95DD05D757475BCADC1A5E40399F5D35 /* Build configuration list for PBXNativeTarget "MRJCardShare" */;
+			buildPhases = (
+				8E735224CD713A51D5C79FA61DD3B7D1 /* Sources */,
+				0AC2B822D68A54F9C5FFFF2B9ECD9540 /* Frameworks */,
+				BB2E4B04B18B5A840690F93AAA90667D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MRJCardShare;
+			productName = MRJCardShare;
+			productReference = 18C8A560B01DC0E0278E480B257DE928 /* MRJCardShare.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 9458D5026B041403B228C4691C6B10B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDDB10F86CC1984217456F2DD85FDA3E /* MRJCardShare */,
+				9F81128CC9600541292E5AFDEC608A07 /* Pods-MRJCardShare_Example */,
+				A24BD2CA97E7B57549E70DB9D68EBED7 /* Pods-MRJCardShare_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0EFA2DFBDA6605566F9469AB627B83AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A507DADCFDEEE11EC5538C7F966E3484 /* Pods-MRJCardShare_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E735224CD713A51D5C79FA61DD3B7D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7E1BB8820724C9F00ADB2F2 /* HouseCardViewA.m in Sources */,
+				E7E1BB8E20724C9F00ADB2F2 /* HouseCardViewController.m in Sources */,
+				71C05E951461ABDC03670856EE1CE1FC /* MRJCardShare-dummy.m in Sources */,
+				E7E1BB7F20724C9F00ADB2F2 /* HouseCardSuperView.m in Sources */,
+				E7E1BB8020724C9F00ADB2F2 /* HouseCardViewD.m in Sources */,
+				E7E1BB8320724C9F00ADB2F2 /* HouseCardItemView.m in Sources */,
+				E7E1BB8720724C9F00ADB2F2 /* HouseCardViewB.m in Sources */,
+				E7E1BB9120724C9F00ADB2F2 /* HouseCardManager.m in Sources */,
+				E7E1BB8D20724C9F00ADB2F2 /* EditHouseShareViewController.m in Sources */,
+				E7E1BB8120724C9F00ADB2F2 /* HouseCardViewC.m in Sources */,
+				E7E1BB8A20724C9F00ADB2F2 /* HouseCardItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CE5AB6EFEFA95160633027BE3B5B683 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EB577ECE0D15741939904DAE28243A0 /* Pods-MRJCardShare_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		116CB1820A0034ACB66F8FD59121882D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MRJCardShare;
+			target = EDDB10F86CC1984217456F2DD85FDA3E /* MRJCardShare */;
+			targetProxy = D9A5F018FEB8AA91E0A03DDF414906B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2A1577C2F5275208B5C390BDE5EE6FC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A21E5176088C5A61CFB626D0299186CD /* Pods-MRJCardShare_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MRJCardShare_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MRJCardShare_Example/Pods-MRJCardShare_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MRJCardShare_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		38F024DF417DDC0EAB283FBD9C09EB6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92E2D70AF50481ADF7053037336D8C2C /* Pods-MRJCardShare_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MRJCardShare_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MRJCardShare_Tests/Pods-MRJCardShare_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MRJCardShare_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		525CCA3627D94F93C0C04A3DC8619CA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F92459C0E0F660AE5F26027AC557531 /* Pods-MRJCardShare_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MRJCardShare_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MRJCardShare_Tests/Pods-MRJCardShare_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MRJCardShare_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		58F2C27CDF0C838B8F09CD4188085C45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B81F35D82A374828252C82C7BD9A0DEF /* MRJCardShare.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MRJCardShare/MRJCardShare-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MRJCardShare/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MRJCardShare/MRJCardShare.modulemap";
+				PRODUCT_NAME = MRJCardShare;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		65A19C19B7FCE8C7F6FCD08151D9718C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 595B3020AB8D8211C79755AFC974A764 /* Pods-MRJCardShare_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MRJCardShare_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MRJCardShare_Example/Pods-MRJCardShare_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MRJCardShare_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		731DC216E1A58545B559F6E0A2418060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		82ED1FA74C2C46C187414DBEB653C661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B81F35D82A374828252C82C7BD9A0DEF /* MRJCardShare.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MRJCardShare/MRJCardShare-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MRJCardShare/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MRJCardShare/MRJCardShare.modulemap";
+				PRODUCT_NAME = MRJCardShare;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04C6656F98352739D2AC823C1BBAF50B /* Build configuration list for PBXNativeTarget "Pods-MRJCardShare_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38F024DF417DDC0EAB283FBD9C09EB6B /* Debug */,
+				525CCA3627D94F93C0C04A3DC8619CA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AF33831D349B854752DC26CAFFABD82 /* Build configuration list for PBXNativeTarget "Pods-MRJCardShare_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A1577C2F5275208B5C390BDE5EE6FC0 /* Debug */,
+				65A19C19B7FCE8C7F6FCD08151D9718C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */,
+				731DC216E1A58545B559F6E0A2418060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95DD05D757475BCADC1A5E40399F5D35 /* Build configuration list for PBXNativeTarget "MRJCardShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58F2C27CDF0C838B8F09CD4188085C45 /* Debug */,
+				82ED1FA74C2C46C187414DBEB653C661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

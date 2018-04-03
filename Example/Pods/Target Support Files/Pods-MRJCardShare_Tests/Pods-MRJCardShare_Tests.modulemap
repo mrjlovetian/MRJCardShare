@@ -1,0 +1,6 @@
+framework module Pods_MRJCardShare_Tests {
+  umbrella header "Pods-MRJCardShare_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
